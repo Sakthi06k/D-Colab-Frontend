@@ -1,0 +1,247 @@
+#profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userImage{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid var(--pcolor1);
+}
+.innerUserImage{
+    width: 100%;
+}
+
+.userName{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: var(--pcolor2);
+    font-weight: 500;
+}
+
+.username-loading{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.innerUser{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.postDesign{
+    font-family: 'Inter', sans-serif;
+    padding: 7px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: var(--pcolor2);
+    background-color: var(--pcolor1);
+    cursor: pointer;
+}
+
+.postDesign:hover{
+    transition: .2s;
+    color: white;
+    background-color: var(--pcolor);
+}
+
+#form{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 9;
+    gap: 20px;
+}
+
+
+
+#postimage1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.posts1{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    height: 390px;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.post1 a{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+
+.posts1::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+.posts1::-webkit-scrollbar-track{
+    margin-top: 20px;
+}
+.posts1::-webkit-scrollbar-thumb{
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.post1{
+    margin: 15px 0px 0px 15px;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border: 3px solid var(--pcolor1);
+}
+
+.post-loading{
+    margin: 15px 0px 0px 15px;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upload{
+    display: none;
+}
+
+#uploadBtn{
+    font-family: 'Inter', sans-serif;
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    color: var(--pcolor2);
+    background-color: var(--pcolor1);
+    cursor: pointer;
+}
+
+#uploadBtn:hover{
+    transition: .2s;
+    color: white;
+    background-color: var(--pcolor);
+}
+
+#label{
+    height: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploadImage{
+    cursor: pointer;
+    height: 100%;
+}
+
+#back{
+    background-color: var(--pcolor1);
+    color: var(--pcolor2);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#back:hover{
+    transition: .2s;
+    color: white;
+    background-color: var(--pcolor);
+}
+
+.buttons{
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 320px) and (max-width:480px) {
+    
+    .user{
+        width: 100%;
+    }
+    .userImage{
+        width: 60px;
+        height: 60px;
+    }
+    .userName{
+        font-size: 20px;
+    }
+    .username-loading{
+        width: 120px;
+    }
+    .innerUser{
+        gap: 15px;
+    }
+    .posts1{
+        width: 100%;
+        height: 60vh;
+        margin-top: 30px;
+        justify-content: center;
+    }   
+    .post1{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    .post-loading{
+        width: 100%;
+    }
+
+    #uploadImage{
+        width: 100%;
+        height: auto;
+        background-color: #E6EAEC;
+    }
+
+    #label{
+        height: fit-content;
+    } 
+    .posts1::-webkit-scrollbar{
+        display: none;
+    }
+}

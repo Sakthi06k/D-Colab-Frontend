@@ -1,0 +1,112 @@
+#postcard{
+    width: 87%;
+    min-height: 70%;
+    max-height: 70%;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border: 3px solid #E6EFFB;
+    overflow: hidden;
+    display: flex;
+}
+
+#postcard:last-child{
+    margin-bottom: 10%;
+}
+
+#postimage{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #e6effb7b;
+}
+
+#postcontrols{
+    width: 10%;
+    height: 100%;
+}
+
+#share{
+    color: #8886B2;
+    cursor: pointer;
+}
+
+#like{
+    color: #8886B2;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#like > path{
+    stroke-width:4.5;
+}
+
+#userimage{
+    width: 35px;
+    height: 35px;
+    background-color: #E6EFFB;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inneruserimage{
+    width: 100%;
+}
+
+#postcontrols{
+    display: flex;
+    height: 90%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#postimageinner
+{
+    width: 100%;
+    height:100%;
+    object-fit:contain;
+}
+
+#control{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    #postcard{
+        width: 98%;
+        min-height: 270px;
+        margin: 0 0 20px 0;
+        flex-direction: column;
+    }
+    #postimage{
+        width: 100%;
+    }
+
+    #postcontrols{
+        flex-direction: row;
+        width: 90%;
+        height: fit-content;
+    }
+    #control{
+        flex-direction: row;
+        gap: 15px;
+    }
+    #like{
+        margin-bottom: 0;
+    }
+    #userimage{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid var(--pcolor1);
+    }
+}

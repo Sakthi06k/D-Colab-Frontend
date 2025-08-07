@@ -1,0 +1,43 @@
+#SearchCard{
+    width: 31.5%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addFriendOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SuggestUserImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#sphotonname{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #8886B2;
+}
+
+#SuggestUserName{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#addFriend{
+    color: #8886B2;
+}
+
+@media (min-width: 320px) and (max-width:480px) {
+    #SearchCard{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
